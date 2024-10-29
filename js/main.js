@@ -37,8 +37,31 @@ const teamMembers = [
   },
 ];
 
-const memberRow = document.getElementById(`member-row`)
 
-teamMembers.forEach(member) =>{
+const memberRow = document.getElementById("member-row");
 
-}
+
+teamMembers.forEach((member) => {
+  const memberCard = `
+          <div class="col-md-4 mb-3"> <!-- mb-3 aggiunge margine inferiore -->
+              <div class="card bg-dark text-light">
+                  <div class="row g-2">
+                      <div class="col-4">
+                          <img src="${member.img}" class="img-fluid rounded-start" alt="${member.name}" />
+                      </div>
+                      <div class="col-8">
+                          <div class="card-body">
+                              <h5 class="card-title">${member.name}</h5>
+                              <p class="card-text">${member.role}</p>
+                              <p class="card-text">
+                                  <small>${member.email}</small>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      `;
+ 
+  memberRow.innerHTML += memberCard;
+});

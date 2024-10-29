@@ -36,3 +36,9 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
+
+const memberRow = document.getElementById(`member-row`)
+
+teamMembers.forEach(member) =>{
+
+}

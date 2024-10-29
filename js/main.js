@@ -43,7 +43,7 @@ const memberRow = document.getElementById("member-row");
 
 teamMembers.forEach((member) => {
   const memberCard = `
-          <div class="col-md-4 mb-3"> <!-- mb-3 aggiunge margine inferiore -->
+          <div class="col-md-4 mb-3"> 
               <div class="card bg-dark text-light">
                   <div class="row g-2">
                       <div class="col-4">
